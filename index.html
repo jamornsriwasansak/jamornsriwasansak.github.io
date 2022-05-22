@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <META name="keywords" content="Jamorn Sriwasansak">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/pure/pure-min.css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="./styles/pure/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="./styles/pure/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Jamorn Sriwasansak</title>
+  </head>
+  <body>
+
+    <!-- top bar -->
+    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable top-bar">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">J A M O R N . M E <a></li>
+
+        <li class="pure-menu-item">
+          <div class="outside-button-group">
+            <a id="github-button" class="pure-button" href="https://www.github.com/jamornsriwasansak" type="button" name="button"> <span class="icon-github icon"></span></a>
+            <a id="linkedin-button" class="pure-button" href="https://www.linkedin.com/in/jamorn-sriwasansak-8055207a" type="button" name="button"> <span class="icon-linkedin icon"></span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <!-- introduction part -->
+      <div class="pure-g introduction">
+        <div class="pure-u-7-24 pure-u-md-1-24"></div>
+        <div class="pure-u-1 pure-u-md-23-24">
+          <h2>Jamorn Sriwasansak (จามร ศรีวสันต์ศักดิ์)</h2>
+          <p>
+            I am a Ray Tracing engineer at <a href="https://www.nvidia.com/">NVIDIA</a>.
+          </p>
+          <p>
+            I used to work at <a href="http://www.polyphony.co.jp/">Polyphony Digital, Inc. (PDI)</a> as a graphics engineer for <a href="https://www.gran-turismo.com/us/products/gt7/">Gran Turismo 7</a>.
+            At PDI, I implemented real-time rendering techniques and made sure that they are fast.
+            Previously, I was a graduate student working on light transport algorithms under the supervision of <a href="https://scholar.google.ca/citations?user=SPK8lekAAAAJ">Prof. Hachisuka</a>.
+            My background (also my hobby) is light transport simulation and tackling problems using C++ and shaders.
+          </p>
+          <p>You can download my <strong>resume</strong> <a href="./cv.pdf">here</a></p>
+          <a href="mailto:jamorn.sriwasansak@gmail.com"> jamorn.sriwasansak@gmail.com </a>
+          <sub>(If I don't answer your email, feel free to spam my inbox twice a day.)</sub>
+        </div>
+      </div>
+      <!-- end introduction part -->
+    </div>
+
+    <!-- todo add web based resume here -->
+
+    <div class="content">
+      <h3>Publications</h3>
+
+      <!-- evplp -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/energy-compensated-vpl.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Efficient Energy-Compensated VPLs using Photon Splatting (Presented at i3D 2018)</h3>
+          <ul>
+            <li>Jamorn Sriwasansak</li>
+            <li><a href="https://beltegeuse.github.io/research/">Adrien Gruson</a></li>
+            <li><a href="http://www.ci.i.u-tokyo.ac.jp/~hachisuka/">Toshiya Hachisuka</a></li>
+          </ul>
+          <p>Proceedings of the ACM on Computer Graphics and Interactive Techniques 1.1 (2018), p. 16</p>
+          <ul>
+            <li><a href="./evplp" class="pub-proj">Project</a></li>
+            <li><a href="./evplp/paper.pdf" class="pub-paper">Paper(authors' preprint)</a></li>
+            <li><a href="./evplp/slide.pdf" class="pub-paper">Presentation</a></li>
+            <li><a href="https://github.com/jamornsriwasansak/evplp" class="pub-code">Code</a></li>
+            <li><a href="https://youtu.be/G1pU-BHX2mU" class="pub-video">Video</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>  
+    <!-- end publications -->
+
+    <div class="content">
+      <!-- mini-portfolio -->
+      <h3>Personal Projects</h3>
+      
+      <!-- mortar -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/mortar.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Mortar</h3>
+          <p>
+            - A physically-based renderer with an agnostic backend (supports both DirectX12 and Vulkan).<br>
+            - With the help of ray tracing API, it features recent techniques such as a screen space bluenoise distribution [Heitz et al. 2019] and Spatio-temporal reservior resampling [Bitterli et al. 2020].<br>
+            - It also includes a Path Tracer NEE with a standard GGX microfacet material for computing a reference.<br>
+          </p>
+          <ul>
+            <li><a href="https://github.com/jamornsriwasansak/vulkan-mortar" class="pub-code-github">Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- mortar -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/wurst.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>WurstRenderer (2019)</h3>
+          <p>
+            - A C++ rendering framework that focuses on experimentability and readability.<br>
+            - For instance, the length of the <a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/bidirpath.h">bidirectional path tracer code</a> is only 430 lines long (including comments, debug code, a lot of blank lines).<br>
+            - All integrators (3d) are compared against reference generated from Mitsuba.<br>
+          </p>
+          <ul>
+            <li><a href="https://github.com/jamornsriwasansak/wurstrenderer" class="pub-code-github">Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- upp -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/upp.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>A Unified Particle Physics Engine (2018)</h3>
+          <p>
+            - A CUDA and OpenGL implementation(from scratch) based on unified particle physics~[Macklin et al. 2014].<br>
+            - It supports rigid bodies, ropes, clothes, fluid (with tension + viscosity) and deformable bodies.<br>
+            - It also includes fast hash grid for particle searches.<br>
+          </p>
+          <ul>
+            <li><a href="https://github.com/jamornsriwasansak/brasstower" class="pub-code-github">Project</a></li>
+            <li><a href="https://www.youtube.com/watch?v=-DgD_PovEdk" class="pub-video">Video</a></li>
+            <li><a href="https://www.youtube.com/watch?v=u6Kr2S3HebY" class="pub-video">Video(Fluid1)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=awrDdUF2Xas" class="pub-video">Video(Fluid2)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- pic2verilog -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/logicdesignrecog.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Pic2Verilog (2014)</h3>
+          <p>
+            - The application automatically generates verilog codes from handdrawn design.<br>
+            - While the application is based on OpenCV framework, all core algorithms are implemented from scratch.<br>
+          </p>
+          <ul>
+            <li><a href="https://github.com/jamornsriwasansak/logic-design-recognizer" class="pub-code-github">Project</a></li>
+            <li><a href="https://www.youtube.com/watch?v=VKhJI0jaUU4" class="pub-video">Video[Thai Lang.]</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- buddy fighter -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/buddyfigthers.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Buddy Fighter (2015)</h3>
+          <p>
+            - A nonsense game created @GlobalGameJam with the mechanism of QWOP + street fighter.<br>
+            - We called it buddy fighters because you need at least 2 players to control 1 character. (1 key = 1 joint movement)<br>
+            - Disclaimer: The game is very silly but all of my friends love it so I decided to keep it here as a memento.<br>
+          </p>
+          <ul>
+            <li><a href="https://ggj.s3.amazonaws.com/games/2015/01/25/1628/GGJ_NiceBoat.zip" class="pub-code">Code</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Ln8F2XONuQE" class="pub-video">Video</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- zego -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/zego.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Zego (2013)</h3>
+          <p>
+            - My first ever computer graphics application.<br>
+            - Build the creation of your own choices with bricks and render the final image.<br>
+            - In this project, OpenGL brick editor and PovRay plugin are implemented.<br>
+            - We called it Zego to avoid any legal issues.<br>
+          </p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=yD8GFIRl2AU" class="pub-video">Video[Thai Lang.]</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- block and blank -->
+<!--      
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/thaw.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Robust THAW (2013)</h3>
+          <p>
+            The project's objective is to replicate <a href="http://tangible.media.mit.edu/project/thaw/">THAW</a>.
+            Unlike original, ours can be used with cheap cameras and cheap displays. The project was implemented as Unity3D plugin.       
+          </p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=nIPSPkDRN60" class="pub-video">Video</a></li>
+          </ul>
+        </div>
+      </div>
+ -->
+    </div> <!-- end of content -->
+
+    <div class="content">
+      <!-- mini-portfolio -->
+      <h3>Commercial Projects</h3>
+
+      <!-- digipro app -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/funviewer.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Smile Viewer (2020)</h3>
+          <p>
+            - A WebGL viewer and editor for dental applications.<br>
+            - The final product is used by <a href="https://digiproapp.com">DigiPro Smile Co., Ltd.</a> (you might need an account.)<br>
+          </p>
+           <ul>
+            <li><a href="https://digiproapp.com" class="pub-proj">Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- j23 -->
+      <div class="pure-g pub">
+        <div class="pure-u-2-5 pure-u-md-5-24">
+          <img class="pure-img" src="./pics/j23.jpg" />
+        </div>
+        <div class="pure-u pub-content pure-u-md-19-24">
+          <h3>Lumio Scanned Mesh Viewer (2016)</h3>
+          <p>
+            - Photorealistic PBR renderer with very cheap computational budget for WebGL on mobile phone. <br>
+            - It even runs on Ipad 2nd Gen at an acceptable framerate (~15-30 fps). <br>
+            - It supports mesh streaming, PCF shadow, depth peeling transparency, SSAO, and DOF. <br>
+            - The final product was used by <a href="http://www.lumio3d.com">Lumio3D</a>. <br>
+          </p>
+          <ul>
+            <!-- <li><a href="http://www.lumio3d.com/wordpress/demo/" class="pub-proj">Demo</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>Patents</h3>
+      <ul>
+        <li>Todd Goodall, Anton S. Kaplanyan, Anjul Patney, <strong>Jamorn Sriwasansak</strong>. "Efficient Motion-Compensated Spatiotemporal Sampling". March 2022</li>
+        <li>Todd Goodall, Anton S Kaplanyan, Anjul Patney, <strong>Jamorn Sriwasansak</strong>, Thomas Sebastian Leimkuhler. "Blue
+Noise Mask for Video Sampling". March 2022</li>
+      </ul>
+    </div>
+    <!-- end patents -->
+
+    <div class="content">
+      <h3>Misc: Index of My SourceCode</h3>
+      <ul>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/bidirpath.h">Bidirectional Path Tracing [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/misc/georgievbluenoiseditheringmask.h">Blue Dithering Mask Generation via Simulated Annealing [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/geometry/phongmesh.h">Direct RayTracing of Phong Tessellation [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/grid.cuh">Fast Hash Grid for Particle Simulation using CUDA [CUDA]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/evplp">Image Space Photon Splatting [C++ & Optix]</a></li>
+        <li><a href="https://gist.github.com/jamornsriwasansak/1875d25ca66e74f25a7e753b660557a1">LightCuts [C++ snippet]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/matrixbidirpath.h">Matrix Bidirectional Path Tracing [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/shapematching.cuh">Meshless Deformation via Shape Matching [CUDA]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/wind.cuh">Modelling Effects of Wind Fields in Cloth Animations [CUDA]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/mortar/blob/master/deprecated-vk-pt-src/shaders/common/bsdf.glsl#L40">Microfacet Models for Refraction through Rough Surfaces [GLSL]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/bsdf/orennayar.h">Oren-Neyar Reflectance Model [C++]</a></li>
+        <li>
+          <a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/pathnextevent.h">Path Tracing Next Event Estimation with MIS [C++]</a>
+          <a href="https://github.com/jamornsriwasansak/evplp/blob/master/reflectcuts/realtimetechniques/pathtracing.cu">[C++ & Optix]</a>
+          <a href="https://github.com/jamornsriwasansak/mortar/blob/master/deprecated-vk-pt-src/shaders/renderer/pathtracer/pathtracer.rgen">[C++ & Vulkan]</a>
+        </li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/distance.cuh">Position-Based Dynamics [CUDA]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/fluid.cuh">Position-Based Fluids [CUDA]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/diffuseprt.h">Precomputed Radiance Transfer (Diffuse) [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/glossyprt2002.h">Precomputed Radiance Transfer (Glossy) [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/pssmltprimitivepath.h">Primary Sample Space Metropolis Light Transport [C++]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/photonmap.h">Progressive Photon Mapping [C++ & Optix]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/mortar/blob/master/deprecated-vk-pt-src/shaders/compute/voxelizer/voxelizer.comp">Really Simple Real-time GPU-based Voxelizer [C++ & Vulkan]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/shapematching.cuh#L70">Robust Rotation Transformation Extraction [CUDA]</a></li>
+        <li><a href="https://gist.github.com/jamornsriwasansak/b04ad776b09c91096e2f06ef0dede372">Spatial Splits in Bounding Volume Hierarchy (note: slow building) [C++ snippet]</a></li>
+        <li><a href="https://gist.github.com/jamornsriwasansak/0c4d09787da0d3c97bd8a1272f5d8ab7">Another Bounding Volume Hierarchy (with SIMD traversal) [C++ snippet]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/mortar/tree/master/src/render/passes/restir_direct_light">Spatiotemporal reservoir resampling for direct light (Bias) [C++ & DX12 & Vulkan]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/brass-pan/blob/master/brasstower/kernel/fluid.cuh#L437">Versatile Fluid Surface Tension and Adhesion [CUDA]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/evplp">Virtual Point Lights [C++ & Optix]</a></li>
+        <li><a href="https://gist.github.com/jamornsriwasansak/a706ebc5e1798716b0effbd9ae38ebec">Virtual Ray Lights [C++ snippet for PBRT]</a></li>
+        <li><a href="https://github.com/jamornsriwasansak/evplp">Virtual Spherical Lights [C++ & Optix]</a></li>
+      </ul>
+    </div>
+
+    <div class="bottom-bar">
+      I like a minimal website. No javascript here.
+    </div>
+
+  </body>
+</html>

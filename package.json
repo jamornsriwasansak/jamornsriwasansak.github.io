@@ -1,0 +1,19 @@
+{
+  "name": "jamornsriwasansak.github.io",
+  "version": "0.0.0",
+  "description": "Just my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/jamornsriwasansak/jamornsriwasansak.github.io"
+  },
+  "author": "Jamorn Sriwasansak",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1"
+  }
+}

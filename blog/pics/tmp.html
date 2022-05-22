@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just In Case I Forget</title>
+</head>
+<body>  
+**Precomputed Radiance Transfer**
+
+![Figure [PRT]: ](prt-head.png)
+
+Precomputed Radiance Transfer (PRT) is a method to precompute radiance transfer (complex light interaction) within a scene.
+PRT also offers you a runtime technique to evaluate the amount of radiance given the emitter information and the compressed precomputed radiance transfer.
+
+In a layman's (game developer's) term, it is a lightmap that you can also change the lighting condition!
+
+Relighting Intuition
+====================
+
+Now, we want to relight a simple scene.
+For example, that simple scene can be an envmap with bunny inside.
+Instead of using complicated techniques, I first render this scene under multiple lighting conditions.
+
+![Figure [PRT]: Pictures of bunnies under different lighting conditions](prt-bunnies.png)
+
+Let's say, I want to see bunny in the afternoon.
+Sadly, I did not render an afternoon bunny rendered.
+However, what I can do is that I can find images with the most similar lighting conditions. Then, compute a new lighting condition through linear combination of them.
+In my case, I chose two images, noon and evening.
+The afternoon bunny image can be computed through a simple interpolation process.
+
+![Figure [PRT]: A missing picture can be obtained through interpolation](prt-bunnies-math.png)
+
+Surely, since we have only 3 different lighting conditions.
+The interpolation result might look ugly.
+One way to counter this problem is to prerender a lot more images with different lighting conditions.
+
+Connection To Ambient Occlusion
+===============================
+
+<!-- 
+Opinions
+========
+
+With the emergence of real-time raytracing, everybody are doing real-time global illumination with Path Tracing + Denoising.
+However, 
+- Shooting Rays is expensive.
+- Unpredictable level of noise in Path Tracing. (Imagine you're rendering veach door scene)
+In my opinion, for the next few years, baking and precomputing in games and fast interactive applications (>120fps) will still be preferred methods.
+-->
+
+</body>
+<link rel="stylesheet" href="blog.css">
+<script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script>
+</html>
