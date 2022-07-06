@@ -164,7 +164,7 @@ ray คือรังสี
 
     นี่เป็นครั้งแรกที่ผมลองวัดประสิทธิภาพโปรแกรมบน CPU ตระกูล AMD
     การใช้ AMD uProf ทำให้ผมรู้สึกหงุดหงิดอย่างบอกไม่ถูก หลายเมนูที่โฆษณาไว้ผมก็หาไม่เจอ
-    มันทำให้ผมค้นพบว่าผมรัก Intel VTune Profiler มากกว่าเยอะ
+    มันทำให้ผมค้นพบว่าผมคิดถึง Intel VTune Profiler
     คอมเครื่องหน้าผมคงจะเก็บตังซื้อ Intel แทน
 
 SIMD (Single Instruction Multiple Data)
@@ -205,6 +205,9 @@ min<br>`c[0] = min(a[0], b[0]);`<br> `c[1] = min(a[1], b[1]);`<br> `c[2] = min(a
 
     หลังจากคุณใช้ SIMD จนชำนาญ คุณก็จะยังหาไม่เจอ
     เพราะใครจะไปจำชื่อฟังก์ชั่นได้ แต่จะรู้สึกทนกับ pain จากการหาไม่เจอได้ดีขึ้น
+
+    ตัวอย่างที่ผมโชว์ไปคือชุดคำสั่ง SIMD ที่เรียกว่า SSE มันทำให้บวกลบเลขได้ทีละ 4 ตัว
+    ถ้าคุณลองหาชุดคำสั่ง AVX มาใช้ก็จะทำให้บวกลบเลขทีละหลายตัวมากขึ้น
 
 Gotta Go Fast
 ===
@@ -266,8 +269,6 @@ Gotta Go Fast
     #บ่น
 
     จริงๆแล้วในโค้ดยังแก้เพิ่มให้เร็วขึ้นได้อีกนิดนึง แต่ว่าถ้าผมแก้มากกว่านี้มันจะไม่ตรงไปตรงมา แล้วจะทำให้เข้าใจยากว่าโค้ดมันถูกแปลงมาได้ยังไง
-    ตัวอย่างที่ผมโชว์ไปคือชุดคำสั่ง SIMD ที่เรียกว่า SSE มันทำให้บวกลบเลขได้ทีละ 4 ตัว
-    ถ้าคุณลองหาชุดคำสั่ง AVX มาใช้ก็จะทำให้บวกลบเลขทีละหลายตัวมากขึ้น
 
 ผลลัพท์
 ===
@@ -295,8 +296,8 @@ Gotta Go Fast
     เค้าทำอะไรกัน ใช่แล้ว เราไม่ได้แก้ if-else เป็น switch-case แล้วเคลมว่าเร็วขึ้น
 
     และจริงๆแล้วเราควรจะวัดประสิทธิภาพบ่อยกว่านี้มาก
-    เช่น บางคนคลั่งไคล้ refactor หรือ OOP มากโดยที่ไม่เข้าใจว่า OOP มีผลอะไรกับโค้ดบ้างและทำให้อะไรช้าลงบ้าง
-    คนที่สนใจลองหาอ่านเรื่อง cost of virtual function
+    เช่น ถ้าคุณคลั่งไคล้ refactor หรือ OOP มาก แต่ไม่เข้าใจว่า virtual function มีผลอะไรกับโค้ดบ้างและทำให้อะไรช้าลงบ้าง
+    คุณก็ควรจะวัดประสิทธิภาพก่อนและหลัง refactor โค้ดเพื่อให้มั่นใจว่ามันไม่ช้าลง
 
 สรุป
 ===
@@ -423,8 +424,9 @@ https://www.agner.org/optimize/instruction_tables.pdf
 แล้วก็เอาส่วนกลับไปคูณทั้ง array แทน
 
 -->
+Acknowledgement: ขอบคุณ Paisan Ingkavara, Thanik Sitthichoksakulchai, Vidvas Keawcharoen สำหรับการ proofread ครับ
 
-<iframe class="fbbanner" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdevtildie%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=621489091282986" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe class="fbbanner" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthedevdownstairs%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=621489091282986" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 </body>
 <link rel="stylesheet" href="blog.css">
