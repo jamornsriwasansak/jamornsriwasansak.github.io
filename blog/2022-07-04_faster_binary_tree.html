@@ -17,7 +17,7 @@
 **เมื่อความแค้นและ SIMD (ซิมดี) ทำให้ Binary Tree คุณเร็วขึ้น**
 2022-07-04
 
-<img src="pics/tree.jpg" alt="">
+<img src="pics/simd_binary_tree.jpg" alt="">
 
 หลายๆครั้งโปรแกรมเราช้าแม้ว่าเราจะใส่โครงสร้างข้อมูลสุดบรรเจิดกับอัลกอริทึมสุดล้ำลงไปแล้ว
 แต่หลายๆจุดที่โปรแกรมช้ากลับเป็นอะไรง่ายๆอย่างการบวกลบคูณหาร
@@ -257,8 +257,8 @@ Gotta Go Fast
             __m128 d = _mm_set1_ps(1.0f / r.direction[a]);                   // float d = 1.0f / r.direction[a];
             __m128 t_near = _mm_mul_ps(_mm_sub_ps(this->minimum4[a], o), d); // float t_near = (this->minimum[a] - o) * d;
             __m128 t_far = _mm_mul_ps(_mm_sub_ps(this->maximum4[a], o), d);  // float t_far  = (this->maximum[a] - o) * d;
-            t_min = _mm_max_ps(_mm_min_ps(t_near, t_far), t0);               // t_min = max(min(t_near, t_far), t_min);
-            t_max = _mm_min_ps(_mm_max_ps(t_near, t_far), t1);               // t_max = min(max(t_near, t_far), t_max);
+            t_min = _mm_max_ps(_mm_min_ps(t_near, t_far), t_min);            // t_min = max(min(t_near, t_far), t_min);
+            t_max = _mm_min_ps(_mm_max_ps(t_near, t_far), t_max);            // t_max = min(max(t_near, t_far), t_max);
         }
         return _mm_cmpngt_ps(t_min, t_max);                                  // return t_max <= t_min;
         // cmpngt = compare not greater than
