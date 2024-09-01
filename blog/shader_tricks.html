@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="กว่าจะได้เข้าไปเป็นกราฟิกโปรแกรมเมอร์ในบริษัทเกม AAA" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://jamorn.me/blog/pics/pexels-photo-845265.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+**ความรู้ basic Optimize Shader ในเกม**
+
+ผมพบว่าในไทยเองจริงๆก็มีคนเขียน Shader ใช้เองไม่น้อย
+บางคนก็โยงโหนดทำเป็น material ก็จัดอยู่จำพวกนี้เหมือนกัน
+ถ้าเขียน Shader เป็นชีวิตจิตใจ
+อยากจะแนะนำให้จำพวกด้านล่างไปเลยแล้วทำตอนเขียนไปเลย
+เพราะ การตามแก้ทีหลังมันลำบากมาก
+
+!!!
+    #บ่น
+
+    "Premature optimization is a root of all evil."<br>
+    Donald Knuth. (a recipient of Turing Award.)
+
+    ประโยคนี้เป็นประโยคที่ผมเกลียดมาก
+    เพราะมันสร้างความเข้าใจผิดค่อนข้างเยอะ
+    คนได้ยินคำว่า optimization ปุ๊บก็ขยาดทันที
+    Donald Knuth เค้าเขียนโค้ดออกมาอาจจะยังไม่ต้อง optimize ด้วยซ้ำก็อาจจะเร็วกว่าโค้ดคุณที่ผ่านการ optimize แล้วก็ได้
+
+    ผมอยากจะให้มองการ optimize ซะใหม่ว่า มันมีส่วนที่มันทำได้ระหว่างเขียนโค้ด กับส่วน Hardcore ที่คุณเก็บไปทำหลังเขียนโค้ดเสร็จดีกว่า
+
+ไม่ใช้ Shader
+===
+
+สูงสุดของการกระบวนท่าคือไร้กระบวนท่า
+สูงสุดของการใช้ Shader คือ การไม่ใช้ Shader
+ปัญหาจำนวนมากในเกมแก้ได้โดยการที่ไม่ต้องใช้ Shader เลย
+
+อย่างเช่นบางคนต้องการ 
+
+<iframe class="fbbanner" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fa.programmer.downstairs/%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=621489091282986" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+</body>
+<link rel="stylesheet" href="blog.css">
+<script> window.markdeepOptions = {tocStyle: 'short'}; </script>
+<script src="js/markdeep.min.js?"></script>
+<!-- <script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script> -->
+</html>
